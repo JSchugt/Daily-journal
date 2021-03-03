@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classified GS14</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>
+        <h2>Daily Journal</h2>
+    </header>
+    <body>
+        <form action="">
+            <fieldset>
+                <label for="journalDate">Date of Entry    </label>
+                <input type="date" name="journalDate" id="journalDate">
+            </fieldset>
+        </form>
+        <form action="" method="get">
+            <fieldset>
+                <label for="Journal Entry">Journal Entry     </label>
+                <textarea name="entry" id="entry" cols="30" rows="10"></textarea>
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <label for="mood selection">Mood of the Day     </label>
+                <select name="mood" id="">
+                    <option value="happy">Happy</option>
+                    <option value="hangry">Hangry</option>
+                    <option value="tired">Tired</option>
+                </select>
+            </fieldset>
+        </form>
+        <button type="submit" onclick="saveTextAsFile()">Record Daily Entry</button>
+
+    </body>
+    <footer>
+
+    </footer>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
