@@ -5,6 +5,7 @@
             "date": 1234567890,
             "entry": "This is my first entry",
             "mood":"",
+            "concepts":"",
             "entryId":0
         }
     ],
