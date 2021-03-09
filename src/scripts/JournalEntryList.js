@@ -1,4 +1,4 @@
-import { useJournalEntries } from "./JournalDataProvider.js"
+import { useJournalEntries } from "./data/EntryManager.js"
 import { JournalEntryComponent } from "./JournalEntry.js"
 
 // DOM reference to where all entries will be rendered
