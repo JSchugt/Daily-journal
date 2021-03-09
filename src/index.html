@@ -21,7 +21,7 @@
         <form action="">
             <fieldset>
                 <label for="concepts covered"> Concepts </label>
-                <input type="text" name="concept" id="">
+                <input type="text" name="concept" id="concepts">
             </fieldset>
         </form>
         <form action="" method="get">
@@ -33,14 +33,15 @@
         <form action="">
             <fieldset>
                 <label for="mood selection">Mood of the Day     </label>
-                <select name="mood" id="">
+                <select name="mood" id="mood">
                     <option value="happy">Happy</option>
                     <option value="hangry">Hangry</option>
                     <option value="tired">Tired</option>
                 </select>
             </fieldset>
         </form>
-        <button type="submit" onclick="saveTextAsFile()">Record Daily Entry</button>
+        <button type="submit" id="saveDailyEntry">Record Daily Entry</button>
+        <button type="submit" id="showEntries">Show Daily Entries</button>
         <div id="entryLog"></div>
 
     </body>

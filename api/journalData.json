@@ -1,0 +1,24 @@
+{
+    "JournalEntry": [
+        {
+            "userId": 1,
+            "date": "07/24/2025",
+            "entry": "This is my first entry",
+            "mood":"",
+            "concepts":"",
+            "entryId":0
+        },
+        {
+            "userId": 1,
+            "date": "07/24/2025",
+            "entry": "What am i doing",
+            "mood":"",
+            "entryId":1
+        }
+    ],
+    "user":[{
+        "userId":1,
+        "name": ""
+    }
+    ]
+}
