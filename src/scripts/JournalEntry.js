@@ -11,5 +11,6 @@ export const JournalEntryComponent = (entry) => {
             <div>${entry.mood}</div>
 
         </section>
+        <br>
     `
 }

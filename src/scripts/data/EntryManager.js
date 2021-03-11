@@ -31,7 +31,6 @@ export const getLoggedInUser = () => {
 
 export const useJournalEntries = () => {
     getJournalEntry().then(() => {
-        console.log(arrayResponse)
         const sortedByDate = arrayResponse.sort(
             (currentEntry, nextEntry) =>
                 Date.parse(currentEntry.date) - Date.parse(nextEntry.date)

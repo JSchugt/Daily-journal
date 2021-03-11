@@ -4,7 +4,7 @@
             "userId": 1,
             "date": "07/24/2025",
             "entry": "This is my first entry",
-            "mood":"",
+            "mood":"Hangry",
             "concepts":"",
             "entryId":0
         },
@@ -12,13 +12,17 @@
             "userId": 1,
             "date": "07/24/2025",
             "entry": "What am i doing",
-            "mood":"",
+            "mood":"Tired",
+            "concepts":"",
+            "entryId":1
+        },
+        {
+            "userId": 1,
+            "date": "07/24/2025",
+            "entry": "Wfffffffffffffhat am i doing",
+            "mood":"Tired",
+            "concepts":"",
             "entryId":1
         }
-    ],
-    "user":[{
-        "userId":1,
-        "name": ""
-    }
     ]
 }
