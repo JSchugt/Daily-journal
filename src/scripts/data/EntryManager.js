@@ -1,3 +1,4 @@
+import {EntryListComponent} from "../JournalEntryList.js";
 let arrayResponse = [];
 
 export const getUsers = () => {
@@ -11,7 +12,7 @@ export const getUsers = () => {
 }
 
 export const getJournalEntry = () => {
-    return fetch("http://localhost:8088/journalEntry")
+    return fetch("http://localhost:8088/JournalEntry")
         .then(response => response.json())
         .then(parsedResponse => {
             // do something with response here
@@ -31,7 +32,6 @@ export const getLoggedInUser = () => {
 
 export const useJournalEntries = () => {
     getJournalEntry().then(() => {
-        console.log(arrayResponse)
         const sortedByDate = arrayResponse.sort(
             (currentEntry, nextEntry) =>
                 Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
@@ -39,8 +39,25 @@ export const useJournalEntries = () => {
         return sortedByDate
     })
     return arrayResponse;
-
-
+}
+export const recordJournalEntry = entryObj =>{
+    return fetch("http://localhost:8088/journalEntry", {
+        method: "POST",
+        headers: {
+            "Content-Type":"application/json"
+        },
+        body: JSON.stringify(entryObj) 
+    })
+    .then(response => response.json())
 }
 
-useJournalEntries();
+export const deleteJournalEntry = entryId => {
+    return fetch(`http://localhost:8088/journalEntry/${entryId}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type":"application/json"
+        }
+    })
+    .then(response => response.json())
+    .then(getJournalEntry)
+}
